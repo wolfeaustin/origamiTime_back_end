@@ -14,14 +14,20 @@ Step.delete_all
 
 
 #Users
+User.create(username: 'Tradional',country: Faker::Address.country, points: rand(0..100))
 20.times do
   User.create(username: Faker::Name.name, country: Faker::Address.country, points: rand(0..100))
 end
 
 #Models
+Model.create(name: 'Butterfly', category: 'Traditional', difficulty: "easy",
+  user_id: 1, description: 'These instructions will walk you through how to fold a traditional origami butterfly. It’s a pretty simple design and all you need is a square sheet of paper.
+
+Are you ready? Let’s get started.', photo: Faker::Avatar.image)
+
 20.times do
   Model.create(name: Faker::Science.element, category: Faker::Space.planet, difficulty: "easy",
-    user_id: rand(0..20), description: Faker::FamilyGuy.quote, photo: Faker::Avatar.image)
+    user_id: rand(1..2), description: Faker::FamilyGuy.quote, photo: Faker::Avatar.image)
 end
 
 
