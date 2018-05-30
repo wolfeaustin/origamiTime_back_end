@@ -18,7 +18,10 @@ gem 'puma', '~> 3.11'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-
+gem 'sass-rails'
+gem 'uglifier'
+gem 'coffee-rails'
+gem 'sprockets-rails'
 # Use Capistrano for deployment
 gem 'faker'
 # gem 'capistrano-rails', group: :development
